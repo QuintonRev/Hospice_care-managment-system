@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="421" pageHeight="595" columnWidth="381" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d0e826fb-8304-4ba1-939c-fb56d88c3706">
+	<property name="ireport.zoom" value="1.2100000000000046"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="6"/>
+	<parameter name="patientId" class="java.lang.String"/>
+	<parameter name="patientName" class="java.lang.String"/>
+	<parameter name="paymentType" class="java.lang.String"/>
+	<parameter name="accountNo" class="java.lang.String"/>
+	<parameter name="addmissionFee" class="java.lang.String"/>
+	<parameter name="monthlyFee" class="java.lang.String"/>
+	<parameter name="amountDue" class="java.lang.String"/>
+	<parameter name="totalAmount" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="time" class="java.lang.String"/>
+	<parameter name="admin" class="java.lang.String"/>
+	<field name="patientId" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="46" width="381" height="33" forecolor="#0000FF" uuid="7583bf22-47a9-405b-9e34-167eab296ece"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="30" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Busy Bee Hospice]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="72" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="381" height="1" uuid="05e43e91-647b-463a-ae24-14f5b8b0e98c"/>
+			</line>
+			<staticText>
+				<reportElement x="-1" y="11" width="381" height="26" uuid="ca25e753-f6ee-4a68-9381-c86168def573"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="SansSerif" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Reciept]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="47" width="381" height="1" uuid="95f52c7c-5a09-4c3b-9868-7c831cb39742"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="49" splitType="Stretch">
+			<image>
+				<reportElement x="154" y="-153" width="66" height="48" uuid="b34776da-41fa-416b-8510-c7be6ef842c3"/>
+				<imageExpression><![CDATA["src\\images\\bee.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="-1" y="20" width="76" height="20" uuid="b05b4a6b-731c-40d6-821c-66c15f010aa7"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient ID:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="77" y="20" width="100" height="20" uuid="73549de4-e614-4263-a279-c54068725414"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patientId}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-1" y="0" width="178" height="20" uuid="9ff71b7b-b79d-4607-896b-97f6af5e3cfa"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient Name & Surname:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="0" width="204" height="20" uuid="58916b09-5ea6-4736-9ff3-e38be3a46f8f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patientName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="172" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="12" width="110" height="20" uuid="22fb5b5d-d7cd-4532-a12e-f46e67fdee11"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Type:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="52" width="110" height="20" uuid="748ee7f4-2cfe-422e-8bec-ddcc89cce21f"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Addmission Fee:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="32" width="110" height="20" uuid="58d90a47-faec-4da7-84e0-8b657be93531"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Account No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="72" width="110" height="20" uuid="5a9b1c63-b48b-49cf-95b7-cba4b9969bea"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monthly Fee:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="92" width="110" height="20" uuid="4e5ad7f2-dcf6-4070-9616-fe977b66ce53"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount Due:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="112" width="110" height="20" uuid="01e9124f-404a-4546-af67-7d7a6ea6cf7a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Amount:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="128" y="12" width="141" height="20" uuid="5f49a270-6917-4ee0-976b-a0456fbff39e"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paymentType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="32" width="141" height="20" uuid="a1d34084-ae2e-49ae-910d-abebc5c69c55"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{accountNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="52" width="141" height="20" uuid="087237fe-126e-4ec2-bf6e-51ad27af49d9"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{addmissionFee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="72" width="141" height="20" uuid="b8c005ea-97ed-4a68-b39e-7ab8d8dfa406"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{monthlyFee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="92" width="141" height="20" uuid="e49a443d-3354-4833-ae73-bc0f70101d09"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{amountDue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="112" width="141" height="20" uuid="f0cedf72-8730-4d27-93a5-b0b2f0bb6a73"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalAmount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="60" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<line>
+				<reportElement x="2" y="0" width="379" height="2" uuid="53469c53-b297-4a41-bf8e-94a611586e0e"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="2" width="31" height="20" uuid="fcc28ebf-1d19-423a-adea-0963bd0727a4"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="22" width="32" height="20" uuid="0a9dae87-8a67-4013-b635-583911c47ee0"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="31" y="2" width="79" height="20" uuid="c00d1b57-dffe-4581-a915-4cd24f899338"/>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="31" y="22" width="79" height="20" uuid="be3228f4-dbdf-46a3-beaa-0b20969962d5"/>
+				<textFieldExpression><![CDATA[$P{time}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="209" y="2" width="60" height="20" uuid="e2ab25c5-31d5-4af1-b40a-2392a7822574"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Admin:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="269" y="2" width="100" height="20" uuid="b916c0e3-a464-4794-af4d-15c625127df9"/>
+				<textFieldExpression><![CDATA[$P{admin}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,26 @@
+  @FXML
+    private Label lblPatientName;
+
+    @FXML
+    private Label lblNo;
+
+    @FXML
+    private Label lblExpiary;
+
+    @FXML
+    private Label lblBatch;
+
+    @FXML
+    private Label lblMedicine;
+
+    @FXML
+    private Label lblTablets;
+
+    @FXML
+    private Label lblDays;
+
+    @FXML
+    private Label lblContact;
+
+    @FXML
+    private Label lblWebsite;

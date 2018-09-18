@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 9, 2018, 1:58:03 PM
+    Author     : Reverside
+*/
+.chart{
+    -fx-clockwise: false;
+    -fx-pie-label-visible: true;
+    -fx-label-line-length: 2;
+    -fx-start-angle: 30;
+    -fx-legend-side: right;
+    
+}
+
+.chart-pie-label{
+    -fx-font-size: 10px;
+}
+
+.chart-content{
+    -fx-padding:2;
+}
+
+
+
+.chart-legend{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    
+}

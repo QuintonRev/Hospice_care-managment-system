@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Hospice_care2.jnlp">
+  <information>
+    <title>Hospice_care2</title>
+    <vendor>Reverside</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Hospice_care2.jar" size="559713" download="eager" />
+    <jar href="lib\activation.jar" size="124332" download="eager" />
+    <jar href="lib\bcprov-jdk14-139.jar" size="1581826" download="eager" />
+    <jar href="lib\beansbinding-1.2.1.jar" size="631289" download="eager" />
+    <jar href="lib\commons-beanutils-1.9.0.jar" size="230951" download="eager" />
+    <jar href="lib\commons-codec-1.4.jar" size="58160" download="eager" />
+    <jar href="lib\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\commons-validator-1.6.jar" size="186077" download="eager" />
+    <jar href="lib\curvesapi-1.04.jar" size="98365" download="eager" />
+    <jar href="lib\groovy-all_2.4.5.jar" size="7072022" download="eager" />
+    <jar href="lib\itext-2.1.7.js5-SNAPSHOT.jar" size="1132307" download="eager" />
+    <jar href="lib\jasperreports-6.3.1.jar" size="5527829" download="eager" />
+    <jar href="lib\jasperreports-fonts-6.3.1.jar" size="2478097" download="eager" />
+    <jar href="lib\jasperreports-javaflow-6.3.1.jar" size="5588071" download="eager" />
+    <jar href="lib\jcalendar-1.4.jar" size="165052" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.46-bin.jar" size="1004840" download="eager" />
+    <jar href="lib\org.apache.commons.collections_3.2.2.v201511171945.jar" size="632437" download="eager" />
+    <jar href="lib\poi-3.16.jar" size="2679259" download="eager" />
+    <jar href="lib\poi-examples-3.16.jar" size="369786" download="eager" />
+    <jar href="lib\poi-excelant-3.16.jar" size="31218" download="eager" />
+    <jar href="lib\poi-ooxml-3.16.jar" size="1433719" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.16.jar" size="5871746" download="eager" />
+    <jar href="lib\poi-scratchpad-3.16.jar" size="1384931" download="eager" />
+    <jar href="lib\postgresql-9.4.1212.jre6.jar" size="676247" download="eager" />
+    <jar href="lib\rs2xml.jar" size="171578" download="eager" />
+    <jar href="lib\swingx-all-1.6.4.jar" size="1482526" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Hospice_care2" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="LoginApp.LoginApp"  name="Hospice_care2" />
+  <update check="always"/>
+</jnlp>

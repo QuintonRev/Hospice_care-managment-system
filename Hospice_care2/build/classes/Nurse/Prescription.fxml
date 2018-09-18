@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="772.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nurse.PrescriptionController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="255.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@meds.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableMedication" layoutX="10.0" layoutY="516.0" prefHeight="200.0" prefWidth="634.0">
+         <columns>
+            <TableColumn fx:id="barcode_columnS" prefWidth="75.0" text="Med ID" />
+            <TableColumn fx:id="barcode_column" prefWidth="75.0" text="Barcode" />
+            <TableColumn fx:id="medName_column" prefWidth="85.99996948242188" text="Name" />
+            <TableColumn fx:id="medQuantity_column" prefWidth="86.0" text="Quantity" />
+            <TableColumn fx:id="medDate_column" prefWidth="89.0" text="Expiary date" />
+            <TableColumn fx:id="custService_column" prefWidth="116.0" text="Customer service" />
+            <TableColumn fx:id="website_column" prefWidth="105.0" text="Website" />
+         </columns>
+      </TableView>
+      <Label layoutX="11.0" layoutY="482.0" prefHeight="27.0" prefWidth="211.0" text="Medication Information:" textFill="#3fa3b5" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPatientname" layoutX="487.0" layoutY="240.0" prefHeight="17.0" prefWidth="162.0" style="-fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPatientSurname" layoutX="488.0" layoutY="284.0" prefHeight="17.0" prefWidth="162.0" style="-fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPatientID" layoutX="465.0" layoutY="319.0" prefHeight="22.0" prefWidth="186.0" style="-fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="284.0" text="Patient Surname:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="239.0" text="Patient Name:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="318.0" text="Patient ID No.:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="53.0" prefWidth="661.0" style="-fx-font-family: Quiksand; -fx-background-color: grey; -fx-font-weight: bolder; -fx-text-fill: blue;" text="Busy Bee Prescription" textAlignment="CENTER" textFill="#c69b1b">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <effect>
+            <Glow level="0.51" />
+         </effect>
+      </Label>
+      <Label layoutX="14.0" layoutY="237.0" prefHeight="27.0" prefWidth="171.0" text="Enter Expiary_date:" textFill="#3fa3b5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCapsules" layoutX="211.0" layoutY="331.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="txtBatchNo" layoutX="181.0" layoutY="286.0" />
+      <DatePicker fx:id="txtExpiary" layoutX="178.0" layoutY="238.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="86.0" layoutY="285.0" prefHeight="27.0" prefWidth="97.0" text="Batch No.:" textFill="#3fa3b5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="330.0" prefHeight="27.0" prefWidth="225.0" text="Tablet Capsule/Spoons:" textFill="#3fa3b5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="365.0" prefHeight="27.0" prefWidth="111.0" text="Times a Day:" textFill="#3fa3b5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDays" layoutX="212.0" layoutY="366.0" prefHeight="25.0" prefWidth="31.0" />
+      <Label layoutX="116.0" layoutY="408.0" prefHeight="27.0" prefWidth="97.0" text="Diagnosis:" textFill="#3fa3b5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDiagnosis" layoutX="213.0" layoutY="409.0" prefHeight="25.0" prefWidth="438.0" />
+      <Label layoutX="352.0" layoutY="358.0" prefHeight="17.0" prefWidth="111.0" text="Current Date:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCurrentDate" layoutX="489.0" layoutY="358.0" prefHeight="22.0" prefWidth="162.0" style="-fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="496.0" layoutY="482.0" />
+      <Button layoutX="165.0" layoutY="728.0" mnemonicParsing="false" onAction="#PrescribeMedication" prefHeight="25.0" prefWidth="97.0" text="Proceed">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="356.0" layoutY="728.0" mnemonicParsing="false" onAction="#CloseForm" prefHeight="25.0" prefWidth="97.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="31.0" layoutY="460.0" prefHeight="7.0" prefWidth="592.0" />
+      <Label layoutX="328.0" layoutY="481.0" prefHeight="27.0" prefWidth="171.0" text="Search by Surname:" textFill="#3fa3b5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

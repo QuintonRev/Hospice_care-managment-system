@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UserController2">
+   <children>
+      <VBox layoutX="31.0" layoutY="191.0" prefHeight="228.0" prefWidth="246.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="152.0" text="Enter First Name:" textFill="#3fa3b5">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adminname" promptText="First Name">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="26.0" prefWidth="133.0" text="Enter Surname:" textFill="#3fa3b5">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="adminsurname" layoutX="10.0" layoutY="10.0" promptText="Surname">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="25.0" prefWidth="117.0" text="Enter Address:" textFill="#3fa3b5">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="adminaddress" layoutX="10.0" layoutY="35.0" promptText="Address">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="26.0" prefWidth="166.0" text="Enter Cell number:" textFill="#3fa3b5">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="admincell" layoutX="10.0" layoutY="60.0" promptText="Cell-Number">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="320.0" layoutY="195.0" prefHeight="248.0" prefWidth="246.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="147.0" text="Enter Tel-number:" textFill="#3fa3b5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="admintell" promptText="Tel-Number">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label prefHeight="25.0" prefWidth="163.0" text="Enter Email Address:" textFill="#3fa3b5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="adminemail" promptText="Email as User-Name">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label prefHeight="25.0" prefWidth="159.0" text="Enter Date of birth:" textFill="#3fa3b5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <DatePicker fx:id="admindob" promptText="Date of Birth">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </DatePicker>
+            <Label prefHeight="25.0" prefWidth="181.0" text="Enter Admin Password:" textFill="#3fa3b5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="adminpassword" promptText="Password">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </PasswordField>
+            <Label prefHeight="25.0" prefWidth="204.0" text="Confirm Admin Password:" textFill="#3fa3b5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="adminpassword1" layoutX="10.0" layoutY="165.0" promptText="Password">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </PasswordField>
+         </children>
+      </VBox>
+      <ImageView fitHeight="135.0" fitWidth="138.0" layoutX="234.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Adminicon.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAdminCancel" layoutX="330.0" layoutY="608.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnAddAdmin" layoutX="154.0" layoutY="608.0" mnemonicParsing="false" onAction="#addAdministrator" prefHeight="25.0" prefWidth="120.0" text="Add Admin">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <RadioButton fx:id="rdbMale" layoutX="31.0" layoutY="539.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="62.0" selected="true" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbFemale" layoutX="101.0" layoutY="539.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="78.0" text="Female">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup>
+      </RadioButton>
+      <Separator layoutX="32.0" layoutY="532.0" prefHeight="3.0" prefWidth="145.0" style="-fx-background-color: grey;" />
+      <Label layoutX="35.0" layoutY="510.0" prefHeight="25.0" prefWidth="117.0" text="Select Gender:" textFill="#3fa3b5">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-15.0" prefHeight="53.0" prefWidth="647.0" style="-fx-font-family: Quiksand; -fx-background-color: grey; -fx-font-weight: bolder; -fx-text-fill: blue;" text="Busy Bee Visitor" textAlignment="CENTER" textFill="#c69b1b">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <effect>
+            <Glow level="0.51" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

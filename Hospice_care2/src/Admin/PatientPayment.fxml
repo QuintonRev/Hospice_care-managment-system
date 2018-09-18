@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.PatientPaymentController">
+   <children>
+      <Label layoutX="2.0" layoutY="65.0" prefHeight="25.0" prefWidth="109.0" text="Payment for: " textFill="#3fa3b5">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPatientName" layoutX="114.0" layoutY="62.0" prefHeight="25.0" prefWidth="149.0" style="-fx-border-width: 0px 0px 1px 0px; -fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="187.0" prefHeight="20.0" prefWidth="102.0" text="Monthly Fee: " textFill="#3fa3b5">
+         <font>
+            <Font name="Arial Narrow Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMonthlyFee" layoutX="152.0" layoutY="185.0" onKeyReleased="#resetFields" />
+      <Label fx:id="lblAmountDue" layoutX="160.0" layoutY="273.0" prefHeight="25.0" prefWidth="149.0" style="-fx-border-width: 1px 1px 1px 1px; -fx-border-color: grey;" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCompute" layoutX="62.0" layoutY="387.0" mnemonicParsing="false" onAction="#makeCalculations" prefHeight="29.0" prefWidth="138.0" text="Compute Payment">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="421.0" layoutY="387.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" prefHeight="53.0" prefWidth="647.0" style="-fx-font-family: Quiksand; -fx-background-color: grey; -fx-font-weight: bolder; -fx-text-fill: blue;" text="Busy Bee Payment" textAlignment="CENTER" textFill="#c69b1b">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <effect>
+            <Glow level="0.51" />
+         </effect>
+      </Label>
+      <RadioButton fx:id="rdbCash" layoutX="154.0" layoutY="142.0" mnemonicParsing="false" selected="true" text="Cash ">
+         <toggleGroup>
+            <ToggleGroup fx:id="Payment" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbDebit" layoutX="241.0" layoutY="142.0" mnemonicParsing="false" text="Debit card" toggleGroup="$Payment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="btnSubmit" layoutX="255.0" layoutY="387.0" mnemonicParsing="false" onAction="#PaymentTransaction" prefHeight="25.0" prefWidth="109.0" text="Submit">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="31.0" layoutY="321.0" prefHeight="20.0" prefWidth="117.0" text="Total amount:" textFill="#3fa3b5">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalAmount" layoutX="163.0" layoutY="315.0" prefHeight="25.0" prefWidth="149.0" style="-fx-border-width: 1px 1px 1px 1px; -fx-border-color: grey;" />
+      <Label layoutX="31.0" layoutY="277.0" prefHeight="25.0" prefWidth="109.0" text="Amount Due:" textFill="#3fa3b5">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="142.0" text="Payment Type" textFill="#3fa3b5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="167.0" fitWidth="165.0" layoutX="423.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PaymentIcon2.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="14.0" layoutY="108.0" prefHeight="9.0" prefWidth="347.0" />
+      <Label fx:id="lblerror_ID" layoutX="155.0" layoutY="210.0" prefHeight="17.0" prefWidth="117.0" />
+   </children>
+</AnchorPane>
